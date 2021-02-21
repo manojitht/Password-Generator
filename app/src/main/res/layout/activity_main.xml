@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBack"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/saveFile"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#FBC02D"
+        android:foregroundTint="#FFFFFF"
+        android:text="save to file"
+        android:textColor="#474343"
+        android:textColorHint="#292828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinview"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <EditText
+        android:id="@+id/num4"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#EAE7E7"
+        android:textColorHint="#757070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <EditText
+        android:id="@+id/num3"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#EAE7E7"
+        android:textColorHint="#757070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#EAE7E7"
+        android:textColorHint="#757070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#E33838"
+        android:foregroundTint="#FFFFFF"
+        android:text="erase all"
+        android:textColor="#F3E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinview"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkBack"
+        android:minHeight="30dp"
+        app:cursorVisible="true"
+        app:forceKeyboard="true"
+        app:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154"
+        app:password="false"
+        app:pinLength="8"
+        app:pinWidth="35dp"
+        app:splitWidth="10dp"
+        tools:ignore="MissingConstraints">
+
+    </com.goodiebag.pinview.Pinview>
+
+    <Button
+        android:id="@+id/generator"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#E33838"
+        android:foregroundTint="#FFFFFF"
+        android:text="Generate"
+        android:textColor="#F3E7E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinview"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/black_ops_one"
+        android:text="PASSWORD GENERATOR"
+        android:textColor="#C6BCBC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/pinview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:hint="Type the description here...."
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:textColor="#FAF1F1"
+        android:textColorHint="#8F8B8B"
+        android:textColorLink="#A19D9D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/generator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinview"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <EditText
+        android:id="@+id/textPassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Type the description here...."
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:textColor="#FAF1F1"
+        android:textColorHint="#8F8B8B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/generator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textColor="#EAE7E7"
+        android:textColorHint="#757070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your numeric password on each block with 2 digits.."
+        android:textAlignment="center"
+        android:textColor="#CCC5C5"
+        app:layout_constraintBottom_toTopOf="@+id/num3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear" />
+
+    <TextView
+        android:id="@+id/timeAndDate"
+        android:layout_width="285dp"
+        android:layout_height="17dp"
+        android:textAlignment="center"
+        android:textColor="#C8C1C1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword1"
+        app:layout_constraintVertical_bias="0.784" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
